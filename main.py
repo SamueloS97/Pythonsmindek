@@ -1,14 +1,14 @@
 def pocet_suborov():
     while True:
-        cislo = input("Zadaj pocet suborov")
+        cislo = input("Zadaj pocet suborov: ")
         try:
             return int(cislo)
         except ValueError:
-            print("subor sa nenasiel")
+            print("subor sa nenasiel ")
 
 input = []
 cislo_slova = 0
-with open("basnicka.txt") as subor:
+with open("basnicka.txt", encoding="utf-8") as subor:
     for slovo in subor:
         input += slovo.split()
 
