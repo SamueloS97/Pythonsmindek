@@ -1,4 +1,4 @@
-import math 1
+import math
 import pyglet
 from pyglet import gl
 from pyglet.window import key
